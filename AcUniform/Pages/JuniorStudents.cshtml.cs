@@ -3,11 +3,11 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace AcUniform.Pages
 {
-    public class CartContentsModel : PageModel
+    public class JuniorStudentsModel : PageModel
     {
-        private readonly ILogger<CartContentsModel> _logger;
+        private readonly ILogger<JuniorStudentsModel> _logger;
 
-        public CartContentsModel(ILogger<CartContentsModel> logger)
+        public JuniorStudentsModel(ILogger<JuniorStudentsModel> logger)
         {
             _logger = logger;
         }
