@@ -17,14 +17,21 @@ body {
   margin-bottom: 60px;
 }
 
-img {
-    position: ;
-    
-}
-
 .headerBackground{
     background-image: url('../Images/HeadingLogo3.PNG.jpg');
     background-repeat: no-repeat;
     height: 100%;
     background-size: cover;
 }
+
+.loremText{
+    font-size: 30px;
+}
+
+.SsUniform{
+    position: relative;
+}
+
+/*.container{
+    background-image: url("../Images/HeadingLogo3.PNG.jpg");
+}*/
