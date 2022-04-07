@@ -3,11 +3,11 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace AcUniform.Pages
 {
-    public class UnisexModel : PageModel
+    public class OptionalModel : PageModel
     {
-        private readonly ILogger<UnisexModel> _logger;
+        private readonly ILogger<OptionalModel> _logger;
 
-        public UnisexModel(ILogger<UnisexModel> logger)
+        public OptionalModel(ILogger<OptionalModel> logger)
         {
             _logger = logger;
         }
