@@ -3,6 +3,31 @@
 @{
     ViewData["Title"] = "Home page";
 }
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+  /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 50%;
+    height: 50%;
+    float: right;
+  }
+
+  .carousel-slide{
+      float:right;
+
+  }
+  
+  </style>
+</head>
+
+
 <div class="headerBackground">
 
 <div class="text-center">
@@ -19,11 +44,43 @@
     <h1 class="display-4">Senior Students</h1>
     
 </div>
+@*<body>
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+  
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="../Images/Year 12 youts.PNG" alt="Year 12">
+    </div>
+    <div class="carousel-item">
+      <img src="../Images/Year 13 youts.PNG" alt="year 13">
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+</body>*@
+
 <div class = "SsUniform">
-<img class = "year13yout" style = "float:right" width = "400" height = "400" src ="../Images/Year 12 youts.PNG">
+
 
 <h3>UNIFORM YEAR 11-12</h3>
-<table>
+<table class="seniorYearUniform">
      <tr>
          <td>Senior straight short skirt</td>
          <td>$80.00</td>
@@ -89,13 +146,9 @@
          <td>$8.50</td>
      </tr>
 </table>
-<img class = "year12yout" style = "float:right" width = "400" height = "400" src ="../Images/Year 13 youts.PNG">
-
-<br>
-<br>
-
-<h3>Year 13 Optional</h3>
-<table class="yr13optional">
+<div class="yr13optional">
+<h3 >Year 13 Optional</h3>
+<table >
     <tr>
         <td>Tie</td>
         <td>$29.00</td>
@@ -105,4 +158,6 @@
         <td>$220.00</td>
     </tr>
 </table>
+
+</div>
 </div>
