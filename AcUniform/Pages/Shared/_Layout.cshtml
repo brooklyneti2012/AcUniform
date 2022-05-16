@@ -29,6 +29,9 @@
                             <a class="nav-link text-dark" asp-area="" asp-page="/SeniorStudents">Senior Students</a>
                         </li>                      
                         <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Optional">Optional Uniform</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
                         </li>
                     </ul>
@@ -45,17 +48,24 @@
        <br>
        <br>
    </div>
- @*   *@
-
+ 
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
+    <div>
+    
+    </div>
     <footer class="border-top footer text-muted">
+        <style>
+        ._p{
+            font-size:8px;
+        }
+        </style>
         <div class="containerr">
-            &copy; 2022 - AcUniform - <a asp-area="" asp-page="/Privacy">Privacy</a>
+            &copy; 2022 - AcUniform - <a asp-area="" asp-page="/Privacy">Privacy</a>          
         </div>
     </footer>
 
