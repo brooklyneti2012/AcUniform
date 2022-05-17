@@ -35,11 +35,15 @@ body {
 }
 
 .nav-item{
-    color: white;
+    background-color:white;
+    list-style:none;
 }
 
-.containerr{
+#footer{
     background-color:black;
+    height:0;
+    font-size:small; 
+
 
 }
 /*table {
