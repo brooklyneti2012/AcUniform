@@ -7,6 +7,18 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/AcUniform.styles.css" asp-append-version="true" />
+    <style>
+    .nav-item:hover{
+        background-color:grey;
+    }
+
+    
+
+    .nav-item{
+        float:left;
+    }
+
+    </style>
 </head>
 <body>
     <header>
@@ -18,7 +30,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
+                    <ul class="navbar-navflex-grow-1">
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
                         </li>
@@ -64,7 +76,7 @@
             font-size:8px;
         }
         </style>
-        <div class="containerr">
+        <div id="footer">
             &copy; 2022 - AcUniform - <a asp-area="" asp-page="/Privacy">Privacy</a>          
         </div>
     </footer>
