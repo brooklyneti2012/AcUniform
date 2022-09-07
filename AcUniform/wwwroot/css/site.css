@@ -54,9 +54,9 @@ body {
     margin: 10px;
     text-align: center;
     font-family: arial;
-    float: right;
-    margin-bottom: 0px;
-    padding: 0px;
+    float: left;
+    margin-bottom: 210px;
+    padding-bottom: 10px;
 }
 
 .price {
@@ -81,6 +81,15 @@ body {
         opacity: 0.7;
     }
 
+.img-card{
+    vertical-align: middle;
+    border-style: none;
+    margin-bottom: 25px;
+}
+
+.h1-card{
+    font-size: 18px;
+}
 /*table {
     border: 2px solid black;
 }*/
