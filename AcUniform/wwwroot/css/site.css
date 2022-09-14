@@ -90,6 +90,10 @@ body {
 .h1-card{
     font-size: 18px;
 }
+
+.sG{
+    float: right;
+}
 /*table {
     border: 2px solid black;
 }*/
