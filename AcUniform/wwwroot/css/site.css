@@ -88,15 +88,16 @@ body {
 }
 
 .h1-card{
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .sG{
-    float: right;
+    float: left;
+    padding-top: 18px;
 }
 
 
-@keyframes workplease {
+/*@keyframes workplease {
     0% {
         left: 0px;
         top: 100px;
@@ -106,7 +107,7 @@ body {
         left: 0px;
         top: 0px;
     }
-}
+}*/
  
 
 
