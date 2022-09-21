@@ -47,17 +47,6 @@ body {
 
 }
 
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    width: 300px;
-    height: 300px;
-    margin: 10px;
-    text-align: center;
-    font-family: arial;
-    float: left;
-    margin-bottom: 210px;
-    padding-bottom: 10px;
-}
 
 .price {
     color: grey;
