@@ -3,7 +3,7 @@
     overflow: hidden;
     background-color: #e9e9e9;
     float: right;
-    list-style: none;
+
 }
 
     .topnav a {
@@ -52,5 +52,9 @@
 .topnav input[type=text] {
     border: 1px solid #ccc;
     float: right;
+}
+
+.nav-ting{
+    padding-right: 100px;
 }
     

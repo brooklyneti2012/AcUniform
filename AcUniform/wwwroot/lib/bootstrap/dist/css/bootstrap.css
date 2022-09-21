@@ -630,8 +630,11 @@ progress {
   margin-left: auto;
 }
 
+.container-fluid{
+    padding-right:75px;
+}
 @media (min-width: 576px) {
-  .container-sm, .container {
+    .container-sm, .container {
     max-width: 540px;
   }
 }

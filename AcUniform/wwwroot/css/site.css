@@ -37,6 +37,7 @@ body {
 .nav-item{
     background-color:white;
     list-style:none;
+    padding-top: 25px;
 }
 
 #footer{
@@ -83,6 +84,26 @@ body {
 .sG{
     float: left;
     padding-top: 18px;
+}
+
+.nav-item {
+    overflow: hidden;
+}
+
+.navbar-navflex-grow-1 a {
+    border-bottom: 3px solid transparent;
+}
+
+    .navbar-navflex-grow-1 a:hover {
+        border-bottom: 3px solid #000000;
+    }
+
+    .navbar-navflex-grow-1 a.active {
+        border-bottom: 3px solid #000;
+    }
+
+.nav-item {
+    float: left;
 }
 
 
