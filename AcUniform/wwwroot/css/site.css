@@ -106,6 +106,25 @@ body {
     float: left;
 }
 
+.Ss- {
+    padding-bottom: 30px;
+    font-size: 60px;
+    text-align: left;
+    font-family: Cambria;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    color: #000000;
+    font-weight: 400;
+    /*    text-decoration: underline solid rgb(68, 68, 68);*/
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    animation-name: workplease;
+    animation-duration: 1s;
+}
+
+
+
 
 /*@keyframes workplease {
     0% {
