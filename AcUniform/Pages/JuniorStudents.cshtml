@@ -3,6 +3,31 @@
 @{
     ViewData["Title"] = "Junior Students page";
 }
+
+@*<form asp-action="Index">
+    <div class="input-group md-form form-control-sm form-2 pl-0">
+        <input name="uniformname" class="form-control my-0 py-1 red-border" type="text" placeholder="Search" aria-label="Search"
+        <div class="input-group-append">
+
+            <span class="input-group-text red lighten-3" id="basic-text1">
+                <i class="fas fa-search text-grey"
+                    aria-hidden="true"></i>
+            </span>
+
+        </div>
+    </div>
+</form>
+
+@section scripts{
+    <script>
+        $(function() {
+            $("#basic-text1").click(function() {
+                $("Form").submit();
+            })
+        });
+    </script>
+}*@
+
 <head>
     <link rel="stylesheet" href="~/css/junior.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
@@ -14,7 +39,7 @@
 
 <ul class="navbar-nav">
   <li class="nav-ting">
-    <input type="text" placeholder="Search.." @*style="justify-content:flex-end;"*@>
+    <input type="text" placeholder="Search.." style="justify-content:flex-end;">
   </li>
 </ul>
 
