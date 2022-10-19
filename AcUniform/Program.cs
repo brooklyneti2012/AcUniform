@@ -1,7 +1,14 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using AcUniform.Data;
 var builder = WebApplication.CreateBuilder(args);
+
+
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddDbContext<AcUniformContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("AcUniformContext") ?? throw new InvalidOperationException("Connection string 'AcUniformContext' not found.")));
 
 var app = builder.Build();
 
