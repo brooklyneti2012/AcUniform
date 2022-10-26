@@ -43,9 +43,11 @@ namespace AcUniform.Pages.Shared.JuniorS
                     JuniorIQ = JuniorIQ.OrderByDescending(j => j.Name);
                     break;
                 case "Price":
-
+                    JuniorIQ = JuniorIQ.OrderByDescending(j => j.Name);
                     break;
             }
+
+            Junior = await JuniorIQ.AsNoTracking().ToListAsync();
         }
     }
 }
