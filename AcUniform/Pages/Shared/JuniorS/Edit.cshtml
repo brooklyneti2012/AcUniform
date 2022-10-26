@@ -1,0 +1,40 @@
+﻿@page
+@model AcUniform.Pages.Shared.JuniorS.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Junior</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Junior.JuniorID" />
+            <div class="form-group">
+                <label asp-for="Junior.Name" class="control-label"></label>
+                <input asp-for="Junior.Name" class="form-control" />
+                <span asp-validation-for="Junior.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Junior.Price" class="control-label"></label>
+                <input asp-for="Junior.Price" class="form-control" />
+                <span asp-validation-for="Junior.Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
