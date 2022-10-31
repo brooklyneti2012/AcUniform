@@ -4,11 +4,12 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using AcUniform.Data;
 using AcUniform.Models;
 
-namespace AcUniform.Pages.Shared.JuniorS
+namespace AcUniform.Pages.JuniorS
 {
     public class IndexModel : PageModel
     {
@@ -19,35 +20,20 @@ namespace AcUniform.Pages.Shared.JuniorS
             _context = context;
         }
 
-        public string Name { get; set; }
-        public string Price { get; set; }
-        public string CurrentFilter { get; set; }
-        public string CurrentSort { get; set; }
         public IList<Junior> Junior { get;set; } = default!;
-
-        public async Task OnGetAsync(string sortOrder, string searchString)
+        [BindProperty(SupportsGet = true)]
+        public string ? SearchString { get; set; }
+        public SelectList ? Price { get; set; }
+        public async Task OnGetAsync()
         {
-            Name = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
-            Price = sortOrder == "Price" ? "Price_desc" : "Price";
-            CurrentFilter = searchString;
-            IQueryable<Junior> JuniorIQ = from j in _context.Junior
-                                          select j;
-
-            if (!String.IsNullOrEmpty(searchString))
+            var juniors = from j in _context.Junior
+                          select j;
+            if (!string.IsNullOrEmpty(SearchString))
             {
-                JuniorIQ = JuniorIQ.Where(j => j.Name.Contains(searchString));
-            }
-            switch (sortOrder)
-            {
-                case "name_desc":
-                    JuniorIQ = JuniorIQ.OrderByDescending(j => j.Name);
-                    break;
-                case "Price":
-                    JuniorIQ = JuniorIQ.OrderByDescending(j => j.Name);
-                    break;
+                juniors = juniors.Where(s => s.Name.Contains(SearchString));
             }
 
-            Junior = await JuniorIQ.AsNoTracking().ToListAsync();
+            Junior = await juniors.ToListAsync();
         }
     }
 }

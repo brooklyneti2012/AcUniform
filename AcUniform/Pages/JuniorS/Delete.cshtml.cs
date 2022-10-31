@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using AcUniform.Data;
 using AcUniform.Models;
 
-namespace AcUniform.Pages.Shared.JuniorS
+namespace AcUniform.Pages.JuniorS
 {
     public class DeleteModel : PageModel
     {
