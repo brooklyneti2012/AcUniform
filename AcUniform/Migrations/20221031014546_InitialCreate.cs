@@ -4,7 +4,7 @@
 
 namespace AcUniform.Migrations
 {
-    public partial class CRUDadded : Migration
+    public partial class InitialCreate : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

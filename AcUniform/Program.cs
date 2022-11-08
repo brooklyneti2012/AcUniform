@@ -1,8 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using AcUniform.Data;
-using AcUniform.Models;
-
 var builder = WebApplication.CreateBuilder(args);
 
 
@@ -11,15 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddDbContext<AcUniformContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("AcUniformContext") ?? throw new InvalidOperationException("Connection string 'AcUniformContext' not found.")));
-
 var app = builder.Build();
-
-using (var scope = app.Services.CreateScope())
-{
-    var services = scope.ServiceProvider;
-
-    //SeedData.Initialize(services);
-}
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

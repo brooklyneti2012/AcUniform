@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AcUniform.Migrations
 {
     [DbContext(typeof(AcUniformContext))]
-    [Migration("20221107220054_CRUD-added")]
-    partial class CRUDadded
+    [Migration("20221031014546_InitialCreate")]
+    partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
