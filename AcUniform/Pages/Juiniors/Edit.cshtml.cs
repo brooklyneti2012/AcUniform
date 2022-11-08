@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 using AcUniform.Data;
 using AcUniform.Models;
 
-namespace AcUniform.Pages.JuniorS
+namespace AcUniform.Pages.Juiniors
 {
     public class EditModel : PageModel
     {

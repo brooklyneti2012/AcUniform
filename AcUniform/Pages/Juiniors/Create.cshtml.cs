@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using AcUniform.Data;
 using AcUniform.Models;
 
-namespace AcUniform.Pages.JuniorS
+namespace AcUniform.Pages.Juiniors
 {
     public class CreateModel : PageModel
     {

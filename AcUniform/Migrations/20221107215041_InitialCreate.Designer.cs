@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AcUniform.Migrations
 {
     [DbContext(typeof(AcUniformContext))]
-    [Migration("20221026220211_SearchBar")]
-    partial class SearchBar
+    [Migration("20221107215041_InitialCreate")]
+    partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
