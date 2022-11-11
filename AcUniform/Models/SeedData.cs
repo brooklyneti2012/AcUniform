@@ -40,55 +40,65 @@ public static class SeedData
                     Name = "Grey Shorts",
                     Price = 50.00M
                 },
+
                 new Junior
                 {
                     Name = "Pinstripe shorts",
                     Price = 59.00M
                 },
+
                 new Junior
                 {
                     Name = "Grey trousers",
                     Price = 66.00M
                 },
+
                 new Junior
                 {
                     Name = "Polo shirt - short sleeve",
                     Price = 35.00M
                 },
+
                 new Junior
                 {
                     Name = "Polo shirt - long sleeve",
                     Price = 40.00M
                 },
+
                 new Junior
                 {
                     Name = "Black/White jersey",
                     Price = 99.00M
                 },
+
                 new Junior
                 {
                     Name = "PE top",
                     Price = 60.00M
                 },
+
                 new Junior
                 {
                     Name = "PE shorts",
                     Price = 45.00M
                 },
+
                 new Junior
                 {
                     Name = "50 denier pantihose",
                     Price = 80.00M
                 },
+
                 new Junior
                 {
                     Name = "Black ankle socks",
                     Price = 8.50M
                 }
+
              );
             context.SaveChanges();
         }
     }
 
-    
-}
+
+}    
