@@ -40,6 +40,26 @@ namespace AcUniform.Migrations
 
                     b.ToTable("Junior");
                 });
+
+            modelBuilder.Entity("AcUniform.Models.Senior", b =>
+                {
+                    b.Property<int>("SeniorID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("SeniorID"), 1L, 1);
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("SeniorID");
+
+                    b.ToTable("Senior");
+                });
 #pragma warning restore 612, 618
         }
     }

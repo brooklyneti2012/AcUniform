@@ -34,7 +34,7 @@ public static class SeedData
                     Name = "Long Skirt",
                     Price = 80.00M
                 },
-                
+
                 new Junior
                 {
                     Name = "Grey Shorts",
@@ -85,8 +85,10 @@ public static class SeedData
                     Name = "Black ankle socks",
                     Price = 8.50M
                 }
-            );
+             );
             context.SaveChanges();
         }
     }
+
+    
 }

@@ -4,42 +4,29 @@
 @{
     ViewData["Title"] = "Index";
 }
+<head>
+    <link rel="stylesheet" href="~/css/Jdb.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
+</head>
 
-<h1>Index</h1>
+<h1 class="Ss-">Junior uniform</h1>
 
-<p>
-    <a asp-page="Create">Create New</a>
-</p>
 <form>
     <p>
         Uniform Name: <input type="text" asp-for="SearchString" />
+        <input type="submit" value="Search" class="btn btn-primary" /> |
+            <a asp-page="./Index">Back to full List</a>
     </p>
 </form>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Junior[0].Name)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Junior[0].Price)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model.Junior) {
-        <tr>
-            <td>
+
+    @foreach (var item in Model.Junior) {
+       
+            <div class="card grow">
+                <img class="img-card" src="../Images/trial.png" alt="Junior pleated skirt" style="width:100%">
                 @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Price)
-            </td>
-            <td>
+                <br>
+                <p class="prices">$@Html.DisplayFor(modelItem => item.Price)</p>
                 <a asp-page="./Details" asp-route-id="@item.JuniorID">Details</a>
-            </td>
-        </tr>
+                <p><button>Add to Cart</button></p>
+            </div>                            
 }
-    </tbody>
-</table>

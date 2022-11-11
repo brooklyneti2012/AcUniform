@@ -16,5 +16,7 @@ namespace AcUniform.Data
         }
 
         public DbSet<AcUniform.Models.Junior> Junior { get; set; } = default!;
+
+
     }
 }
